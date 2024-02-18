@@ -1,0 +1,35 @@
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+
+#myID1 {
+  color: blue;
+}
+
+#myID2 {
+  background-color: green;
+}
+
+.myClass1 {
+  color: blue;
+}
+
+.myClass2 {
+  background-color: green;
+}
+
+.myClass3 {
+  color: red;
+  background-color: yellow;
+}
+
+a[href^="https"] {
+  color: red;
+}
+
+a:hover {
+  color: green;
+  border: 1px solid blue;
+}
