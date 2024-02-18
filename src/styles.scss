@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@media (prefers-color-scheme: no-preference) {
+  :root {
+    --font-color: #003163;
+    --bg-color: #f8c7c7;
+  }
+}
+
+// light mode variables
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-color: #003163;
+    --bg-color: #f8c7c7;
+  }
+}
+
+// dark mode variables
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #f8c7c7;
+    --bg-color: #003163;
+  }
+}
