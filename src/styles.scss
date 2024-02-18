@@ -8,16 +8,28 @@
 
 // light mode variables
 @media (prefers-color-scheme: light) {
-  :root {
+  :root,
+  .light {
     --font-color: #003163;
     --bg-color: #f8c7c7;
+  }
+
+  .dark {
+    --font-color: #f8c7c7;
+    --bg-color: #003163;
   }
 }
 
 // dark mode variables
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  .dark {
     --font-color: #f8c7c7;
     --bg-color: #003163;
+  }
+
+  .light {
+    --font-color: #003163;
+    --bg-color: #f8c7c7;
   }
 }

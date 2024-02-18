@@ -1,30 +1,31 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-css-var',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './css-var.component.html',
   styleUrl: './css-var.component.scss'
 })
 export class CssVarComponent implements OnInit {
-  body = document.querySelector("body");
+  html = document.querySelector("html");
 
   ngOnInit(): void {
 
   }
 
   lightMode() {
-    if (this.body) {
-      this.body.classList.remove("dark");
-      this.body.classList.add("light");
+    if (this.html) {
+      this.html.classList.remove("dark");
+      this.html.classList.add("light");
     }
   }
 
   darkMode() {
-    if (this.body) {
-      this.body.classList.remove("light");
-      this.body.classList.add("dark");
+    if (this.html) {
+      this.html.classList.remove("light");
+      this.html.classList.add("dark");
     }
   }
 
